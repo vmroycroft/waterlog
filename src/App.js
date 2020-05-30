@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BreakpointProvider, setDefaultBreakpoints } from 'react-socks';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './features/Home';
 
-function App() {
+// setDefaultBreakpoints([
+//   { xsmall: 0 },
+//   { small: 640 },
+//   { medium: 768 },
+//   { large: 1024 },
+//   { xlarge: 1280 }
+// ]);
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BreakpointProvider>
+      <Router>
+        <Switch as="main">
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </BreakpointProvider>
   );
 }
 
