@@ -1,5 +1,5 @@
 <div style="padding-top:2rem;text-align:center;">
-   <img src="./src/assets/images/rain-tracker-icon.svg" style="width:100px;">
+   <img src="./src/assets/images/rain-tracker-logo.svg" style="width:100px;">
    <h1 style="margin-top:0">Rain Tracker</h1>
 </div>
 

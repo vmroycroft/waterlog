@@ -1,11 +1,8 @@
 import React from 'react';
-import { BreakpointProvider, setDefaultBreakpoints } from 'react-socks';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from './features/Home';
+import { BreakpointProvider } from 'react-socks';
+// import { BreakpointProvider, setDefaultBreakpoints } from 'react-socks';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 // setDefaultBreakpoints([
 //   { xsmall: 0 },
@@ -15,18 +12,18 @@ import Home from './features/Home';
 //   { xlarge: 1280 }
 // ]);
 
-function App () {
-  return (
-    <BreakpointProvider>
-      <Router>
-        <Switch as="main">
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </BreakpointProvider>
-  );
+function App() {
+	return (
+		<BreakpointProvider>
+			<Router basename="/rain">
+				<Switch as="main">
+					<Route exact path="/">
+						<Home />
+					</Route>
+				</Switch>
+			</Router>
+		</BreakpointProvider>
+	);
 }
 
 export default App;
