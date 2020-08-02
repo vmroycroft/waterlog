@@ -3,7 +3,7 @@
    <h1 style="margin-top:0">Rain Tracker</h1>
 </div>
 
-![Version](https://img.shields.io/badge/version-v0.1.0-orange)
+![Version](https://img.shields.io/github/package-json/v/vmroycroft/rain-tracker)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f3d01ceb-3a80-4847-8654-27c10291f426/deploy-status)](https://app.netlify.com/sites/gracious-ritchie-b4b3da/deploys)
 
 A rain tracking website.
