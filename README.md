@@ -18,13 +18,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    npm install
    ```
 
-2. Rename `.env.example` to `.env` and update `REACT_APP_GQL_URL` with your GraphQL server URL
+2. Rename `.env.example` to `.env` and update `REACT_APP_METEOSTAT_KEY` with your Meteostat API key
 
 3. Run the app in development mode
 
    ```
-   npm start
+   netlify dev
    ```
+
+4. Open a browser and navigate to http://localhost:8888/
 
 ## Building for production
 
