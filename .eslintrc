@@ -1,0 +1,35 @@
+{
+	"extends": [
+		"react-app",
+		"airbnb",
+		"airbnb/hooks",
+		"prettier",
+		"prettier/react",
+		"plugin:react/recommended",
+		"plugin:jsx-a11y/recommended"
+	],
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"jest": true,
+		"node": true
+	},
+	"plugins": [
+		"react",
+		"prettier",
+		"jsx-a11y"
+	],
+	"rules": {
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [
+					".js",
+					".jsx"
+				]
+			}
+		],
+		"react/forbid-prop-types": "off"
+	}
+}

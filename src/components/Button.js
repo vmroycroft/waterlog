@@ -2,12 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ClassNames from 'classnames';
 
-function Button(props) {
-	let classes = ClassNames(`${props.className} py-4 px-16 rounded-full text-white bg-blue focus:outline-none focus:shadow-outline`);
+/**
+ * A button.
+ *
+ * @component
+ */
+function Button({ onClick, className, children }) {
+	let classes = ClassNames(
+		`${className} py-4 px-16 rounded-full text-white bg-blue focus:outline-none focus:shadow-outline`
+	);
 
 	return (
-		<button onClick={props.onClick} className={classes}>
-			{props.children}
+		<button onClick={onClick} className={classes}>
+			{children}
 		</button>
 	);
 }

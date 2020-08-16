@@ -3,10 +3,17 @@ import axios from 'axios';
 import { subDays, formatISO } from 'date-fns';
 import { Breakpoint } from 'react-socks';
 import Button from '../components/Button';
+
 import location from '../assets/images/location.svg';
 import grass from '../assets/images/grass.svg';
 import rainDrop from '../assets/images/rain-drop.svg';
 
+/**
+ * Home page yay!
+ *
+ * @component
+ * @category Pages
+ */
 const Home = () => {
 	// The station ID for Newport News, VA is KPHF0
 	// TODO Determine why the Meteostat API is returning null for precip
@@ -88,10 +95,14 @@ const Home = () => {
 						<div className="flex flex-col justify-center items-center h-full p-4">
 							<div className="divide-y divide-dark-tan text-center">
 								<h2 className="py-4">
-									You've gotten <span className="text-dark-green">{precipLastSeven}</span> inches of rain in the last 7 days
+									You've gotten{' '}
+									<span className="text-dark-green">{precipLastSeven}</span>{' '}
+									inches of rain in the last 7 days
 								</h2>
 								<h2 className="py-4">
-									You've gotten <span className="text-dark-green">{precipLastThirty}</span> inches of rain in the last 30 days
+									You've gotten{' '}
+									<span className="text-dark-green">{precipLastThirty}</span>{' '}
+									inches of rain in the last 30 days
 								</h2>
 							</div>
 						</div>
@@ -116,10 +127,14 @@ const Home = () => {
 								<img src={rainDrop} alt="" className="w-24 mb-8" />
 								<div className="divide-y divide-dark-tan">
 									<h2 className="text-2xl p-4">
-										You've gotten <span className="text-dark-green">{precipLastSeven}</span> inches of rain in the last 7 days
+										You've gotten{' '}
+										<span className="text-dark-green">{precipLastSeven}</span>{' '}
+										inches of rain in the last 7 days
 									</h2>
 									<h2 className="text-2xl p-4">
-										You've gotten <span className="text-dark-green">{precipLastThirty}</span> inches of rain in the last 30 days
+										You've gotten{' '}
+										<span className="text-dark-green">{precipLastThirty}</span>{' '}
+										inches of rain in the last 30 days
 									</h2>
 								</div>
 							</div>
