@@ -9,7 +9,7 @@ import ClassNames from 'classnames';
  */
 function Button({ onClick, className, children }) {
 	let classes = ClassNames(
-		`${className} py-4 px-16 rounded-full text-white bg-blue focus:outline-none focus:shadow-outline`
+		`${className} py-4 px-16 rounded-full text-white bg-blue-500 focus:outline-none focus:shadow-outline`
 	);
 
 	return (
